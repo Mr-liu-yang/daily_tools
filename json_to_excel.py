@@ -5,6 +5,7 @@ import json,xlwt
 import sys
 
 def writeM():
+    # 以下标题应该按照具体要转换的json数据决定
     title = ['appid',  '名称', 'MD5', 'version_code',  '开发者', '下载量', '介绍']
     book = xlwt.Workbook() # 创建一个excel对象
     sheet = book.add_sheet('Sheet1',cell_overwrite_ok=True) # 添加一个sheet页
